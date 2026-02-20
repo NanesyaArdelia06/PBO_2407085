@@ -1,8 +1,34 @@
 package latihan_pbo.latihan1_2407085;
 
+class Cafe{
+    String nama;
+    String alamat;
+    String menu;
+
+    //contrukstor
+    Cafe(String nama, String alamat, String menu) {
+        this.nama = nama;
+        this.alamat = alamat;
+        this.menu = menu;
+        System.out.println("Nama Cafe  : " + nama);
+        System.out.println("Alamat     : " + alamat);
+        System.out.println("Menu       : " + menu);
+        System.out.println();
+    }
+
+    //method
+    
+    void buka(){
+        System.out.println("Cafe sudah buka");
+    }
+}
+
 public class Main {
-    Run | Debug
     public static void main(String[] args) {
-        System.out.println("Praktikum 1 2407085"); 
+
+        Cafe cafe1 = new Cafe("Halaman", "Indramayu", "Mie Goreng");
+        cafe1.buka();
+        Cafe cafe2 = new Cafe("Ranum", "Indramayu Jabar", "Roti Bakar");
+        cafe2.buka();
     }
 }
